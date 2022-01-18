@@ -9,6 +9,6 @@ cd dist
 git init
 git add -A
 git commit -m "New Deployment"
-git push -f github.com/YoursTruly450/weather-vue-typescript main:gh-pages
+git push -f git@github.com:YoursTruly450/weather-vue-typescript.git master:gh-pages
 
 cd -
