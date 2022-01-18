@@ -1,0 +1,104 @@
+.weather {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+  
+
+  &__content {
+    width: 500px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 48px;
+    background-image: url('~@/assets/img/weather.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+  }
+
+  &__search {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  &__input {
+    width: 200px;
+    height: 36px;
+    box-sizing: border-box;
+    padding: 6px 12px;
+    outline: none;
+    background: rgba($color: #ffffff, $alpha: 0.4);
+    border: 1px solid #2c3e50;
+    border-radius: 8px;
+    @include font-type(14px, 18px, bold);
+    color: #000;
+
+    &::placeholder {
+      @include font-type(14px, 18px, bold);
+      color: #000;
+    }
+  }
+
+  &__button {
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 6px 12px;
+    outline: none;
+    background: rgba($color: #ffffff, $alpha: 0.4);
+    border: 1px solid #2c3e50;
+    border-radius: 8px;
+    @include font-type(14px, 18px, bold);
+    color: #000;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.01);
+      background: rgba($color: #ffffff, $alpha: 0.6);
+    }
+  }
+
+  &__block {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__place {
+    @include font-type(32px, 36px, bold);
+  }
+
+  &__date {
+    margin-top: 4px;
+    @include font-type(28px, 32px, normal);
+  }
+
+  &__temp {
+    margin-top: 24px;
+    @include font-type(64px, 70px, bold);
+    font-style: italic;
+    display: flex;
+    box-sizing: border-box;
+    padding: 10px 32px;
+    background: rgba($color: #ffffff, $alpha: 0.4);
+    border-radius: 8px;
+  }
+
+  &__desc {
+    margin-top: 18px;
+    @include font-type(48px, 56px, bold);
+    color: #fff;
+    font-style: italic;
+    text-transform: capitalize;
+  }
+}

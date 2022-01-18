@@ -1,0 +1,7 @@
+.time {
+  margin-top: 48px;
+
+  &__value {
+    @include font-type(56px, 60px, bold);
+  }
+}
